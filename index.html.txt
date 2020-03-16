@@ -1,0 +1,51 @@
+/*
+     git 操作的具体步骤
+     1.cd 路径 进入当前目录
+     2.配置git基本操作
+               【注】没有消息就是还消息。
+     3.git init 在本地进行初始化（建立暂存区） 
+      .git 文件存储当前项目的所有版本信息
+     
+     4.工作区=>暂存区
+       git add 文件名
+       git add * 提交所有文件
+       git commit -m"这一次提交的描述"
+     
+     5.查看当前工作区的状态
+
+       git status
+
+     6.从暂存区恢复文件到工作区
+       git checkout 文件名
+
+     7.查看工作区和暂存区的区别
+     
+       git diff
+      
+     8. clear 清屏操作
+
+     9. git log 
+        
+        查看提交的所有版本
+ 
+
+     10. 回复文件到指定的某一个版本  
+        
+        git reset --hard 版本号
+     
+     11.生成ssh密匙 ssh-keygen -t rsa -C "你的github邮箱"
+        
+        windows电脑查找文件：我的电脑=>用户=>用户名文件夹=>.sshwen（隐藏）=>xxx.pub(存有密匙)
+
+     12. github 账户配置密匙
+
+     13.暂存区=>远程仓库
+        git remote add origin https://github.com/herohyh/gitlearn.git
+        git push -u origin master
+         [注]提交过程中可能需要你输入用户名，密码。
+
+     14. git clone 仓库地址
+          (从远程仓库，克隆项目到本地)
+  
+     15.git pull (从远程仓库同步本地代码)
+
