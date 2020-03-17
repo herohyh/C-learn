@@ -49,3 +49,6 @@
   
      15.git pull (从远程仓库同步本地代码)
 
+     16.在执行该命令时有时候会出错，原因是远程的文件未同步下来。此时可以先执行：              git pull --rebase origin master将远程文件同步下来。然后在执行推送即可。
+        完成后在后续的推送文件到远程仓库中可直接执行git push origin master
+
